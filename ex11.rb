@@ -8,4 +8,7 @@ weight = gets.chomp()
 puts "So, you're #{age} years old, #{height} tall and #{weight} heavy."
 
 # Extra Credit
-
+print "What is your favorite color? "
+color = gets
+color.chomp!
+puts "Your favorite color is #{color}."
