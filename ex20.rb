@@ -13,6 +13,8 @@ end
 
 #this says to print a number, followed by a single line from the file. Because of the way line markers work, the program remembers where in the file it is, so if readline() is called again, it will move on to the next one. readline() is an innate method of the IO class (same as gets()).
 def print_a_line(line_count, f)
+	puts
+	puts "Currently on line #{line_count}"
 	puts "#{line_count} #{f.readline()}"
 end
 
