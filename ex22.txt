@@ -1,0 +1,20 @@
+For this exercise, I am choosing to go through each exercise and instead of making a list of every single operand and function, to only record those which I believe I have a tenuous grasp of, or cannot completely articulate the function of. I have largely blogged about the complex concepts I have encountered at my blog, branmci.tumblr.com, which is a record of my journey to becoming a web dev. This blogging has been alarmingly helpful in solidifying concepts for me. Teaching is the best way to learn, as they say.
+
+concepts:
+%d - formatter, used in sprintf, format as a decimal number
+% - modulo, AND string format marker (puts "foo %s" % my_name)
+[1, 2, 3, 4] - can also be passed to formatter after %
+gets.chomp() - gets input, chops off that \n at the end from user's "ENTER" input
+require 'open-uri' (ex12) - library for loading web pages
+ARGV - constant, list of arguments passed when the file is opened, usually dealt with by 'first, second, third - ARGV'
+$0 - the script name, constant
+HERE document notation - other way of making multi-line strings <<MESSAGE, MESSAGE
+File.open(filename) - opens a file in read-only
+File.read() - outputs a file
+File.seek(0, IO::SEEK_SET) - REWIND, yo!
+File.close() - save it. save it all.
+STDIN.gets.chomp - another way to get user input, important to use if you're using ARGV
+File.truncate(File.size) - If the file is opened, erase it.
+puts_two(*args) - multi-argument notation, use arg1, arg2 = args to separate
+
+

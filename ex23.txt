@@ -1,0 +1,19 @@
+In this exercise, you are supposed to go find ruby code on github and skim it for unknown methods.
+
+This is a bit too free-form for me, but I have gone through a few different libraries. My biggest question at this point is: "What is a Rakefile?"
+
+rake.rubyforge.org/doc/rakefile_rdoc.html says that Rakefiles have tasks.
+
+rake.rubyforge.org says that Rakefiles are rake's version of Makefiles).
+
+Wikipedia says that Rake is a software task management tool. "It allows you to specify tasks and describe dependencies as well as to group tasks in a namespace."
+
+Stackoverflow has a link to rake.rubyforge.org/files/doc/rational_rdoc.html, presumably written by the author of Rake that says that it is "a Ruby version of Make."
+
+Searching for Make brings up a page on GNU that says "Make enables the end user to build and install your package without knowing the details of how that is done -- because these details are recorded in the makefile that you supply."
+
+But why does the end user need to build a package for an executable in Ruby? Isn't Ruby just executable directly from the Terminal. That's the whole point of commands like "ruby ex21.rb," right? Rake sure sounds like a list of commands for a compiler, and I thought Ruby was an interpreted language, not a compiled one.
+
+Though, I feel like part of me understands the Rakefile, from a build standpoint. At a previous company, I have done work with enchant.js, a Javascript-based game engine. When people edit the code or create an addon, they have to run grunt.js to standardize the code and make sure certain things are written in certain ways, to ensure compatibility. Is that what Rakefiles are for? To be executed if someone edits the code?
+
+I sure will be glad to be at Dev Bootcamp come March, able to raise my hand and ask questions.
