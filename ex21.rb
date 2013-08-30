@@ -34,3 +34,9 @@ puts "Here is a puzzle."
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 puts "That becomes: #{what} Can you do it by hand?"
+# I can, in fact.
+
+# EC 4
+puts "Now I'll do the opposite. 50 + (180 - (35 / 74)), which should be 229 or around there with integer division."
+solution = add(iq, subtract(weight, divide(age, height)))
+puts "And using the methods we've created, we get #{solution}."
