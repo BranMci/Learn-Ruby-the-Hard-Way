@@ -11,7 +11,7 @@ if door == "1"
 	puts "1. Take the cake."
 	puts "2. Scream at the bear."
 
-	promp; bear = gets.chomp
+	prompt; bear = gets.chomp
 
 	if bear == "1"
 		puts "the bear eats your face off. Good job!"
