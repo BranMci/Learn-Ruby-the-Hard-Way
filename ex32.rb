@@ -21,6 +21,8 @@ end
 elements = []
 
 # then use a range object to do 0 to 5 counts
+# EC: It looks like elements.push(0..5) adds a value of "0..5" to the first element of the elements array, so you need to actually use a for loop to populate it, or maybe 0..5.times?
+
 for i in (0..5)
 	puts "Adding #{i} to the list."
 	# push is a function that arrays understand
@@ -31,3 +33,6 @@ end
 for i in elements
 	puts "Element was: #{i}"
 end
+
+# EC: For arrays, removal methods include shift and pop, and additive methods include unshift and push.
+
