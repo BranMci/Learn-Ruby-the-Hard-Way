@@ -5,4 +5,5 @@
 
 # and: same as &&
 
-# BEGIN: no idea
+# BEGIN: If present in a Ruby file, designates a block of code to be executed as the Ruby file is loaded. opposite of the END statement.
+	# use: BEGIN {}]
