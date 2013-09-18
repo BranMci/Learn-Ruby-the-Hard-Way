@@ -12,4 +12,6 @@ PHRASE_FIRST = ARGV[0] == "english"
 
 # make PHRASE_FIRST true IF "english" is passed as the first argument when the program is called
 
-snippets = PHRASES.keys
+snippets = PHRASES.keys().sort_by {rand}
+
+# take an array of the keys from PHRASES, randomly assort it, and assign it to 'snippets'
