@@ -1,11 +1,21 @@
+# EC1- Everything's an object in Ruby. Everything. So, yes, a Class can be used like an Object. However, if you're trying to access a method or a property of a Class directly, you have to use ::. I.e. Dog::wag_tail()
+
+
+
 ## Animal is-a object Look at the extra credit
 class Animal
+  def play(sound)
+    if sound == "bark"; puts "The animal barked."
+    elsif sound == "meow"; puts "The animal meowed."
+    else puts "The animal made some kind of noise. Not sure what that was..."
+    end
+  end
 end
 
 ## Dog is-an Animal
 class Dog < Animal
   def initialize(name)
-    ##  ??
+    ##  Dog has-a name
     @name = name
   end
 end
@@ -41,7 +51,7 @@ class Employee < Person
   end
 end
 
-class Fish
+class Fish < Animal
 end
 
 ## Salmon is-a Fish
@@ -64,17 +74,19 @@ mary = Person.new("Mary")
 ## Mary has-a pet. Satan. (That's some thick irony right there.)
 mary.pet = satan
 
-## ??
+## frank is-an Employee
 frank = Employee.new("Frank", 120000)
 
-## ??
+## frank has-a pet. Rover.
 frank.pet = rover
 
-## ??
+## Flipper is-a Fish.
 flipper = Fish.new()
 
-## ??
+## Crouse is-a Salmon.
 crouse = Salmon.new()
 
-## ??
+## Harry is-a Halibut.
 harry = Halibut.new()
+
+satan.play("meow")
