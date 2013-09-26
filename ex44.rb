@@ -1,26 +1,22 @@
-class Other
+module Other
 
-  def override()
+  def Other.override()
     puts "OTHER override()"
   end
 
-  def implicit()
+  def Other.implicit()
     puts "OTHER implicit()"
   end
 
-  def altered()
+  def Other.altered()
     puts "OTHER altered()"
   end
 end
 
 class Child
 
-  def initialize()
-    @other = Other.new()
-  end
-
   def implicit()
-    @other.implicit()
+    Other.implicit()
   end
 
   def override()
@@ -29,7 +25,7 @@ class Child
 
   def altered()
     puts "CHILD, BEFORE OTHER altered()"
-    @other.altered()
+    Other.altered()
     puts "CHILD, AFTER OTHER altered()"
   end
 end
